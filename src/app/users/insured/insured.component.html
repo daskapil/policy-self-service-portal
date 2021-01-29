@@ -1,0 +1,131 @@
+<div class="card mb-0 shadow mt-3">
+  <h5 class="card-header bg-gradient text-white">
+    <span>Deshboard</span>
+    <span class="right-align">Policy# {{ policyNumber }}</span>
+  </h5>
+  <div class="card-body mb-0">
+    <div class="row ml-1">
+      <h5 class="card-title mb-3" style="color: rgb(19, 19, 187)">
+        Policy Summary
+      </h5>
+    </div>
+    <div class="row mr-1">
+      <div class="col-sm-6">
+        <table class="table">
+          <tbody>
+            <tr>
+              <th scope="row">Renewal Date</th>
+              <td class="text-right">
+                {{ policyData.nextPaymentDate | date: "longDate" }}
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Drivers</th>
+              <td class="text-right">{{ fullName }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-6">
+        <table class="table">
+          <tbody>
+            <tr>
+              <th scope="row">Premiun</th>
+              <td class="text-right">
+                <strong>
+                  {{ policyData.premium | currency: "USD":"symbol":"1.0-0" }}
+                </strong>
+                <small> Every {{ policyData.term }} months</small>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Vehicle</th>
+              <td class="text-right">{{ policyData.vehicle }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row ml-1">
+      <h5 class="card-title mb-3" style="color: rgb(36, 180, 36)">
+        Billing Summary
+      </h5>
+    </div>
+    <div class="row ml-1 mr-1">
+      <div class="row">
+        <div class="col-sm-8">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">Next Payment Due</th>
+                <td class="text-right">
+                  {{ policyData.nextPaymentDate | date: "longDate" }}
+                </td>
+                <td class="text-right">
+                  {{ policyData.premium | currency: "USD":"symbol":"1.0-0" }}
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Last Payment</th>
+                <td class="text-right">
+                  {{ policyData.lastPaymentDate | date: "longDate" }}
+                </td>
+                <td class="text-right">
+                  {{
+                    policyData.lastPayment | currency: "USD":"symbol":"1.0-0"
+                  }}
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3" class="text-center">
+                  <a href="#" class="btn btn-primary btn-lg btn-block">
+                    View Payment History
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-sm-4">
+          <div
+            class="card border-light bg-light text-right"
+            style="max-width: 18rem"
+          >
+            <div [hidden]="!+policyData.accountBalance">
+              <a class="btn btn-success btn-block" [routerLink]="['payment']">
+                Pay Now
+              </a>
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Your account balance is
+                  {{
+                    policyData.accountBalance | currency: "USD":"symbol":"1.0-0"
+                  }}
+                  !
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="card-body text-success"
+              [hidden]="+policyData.accountBalance"
+            >
+              <h5 class="card-title text-center">✔️ Paid To Date</h5>
+              <p class="card-text text-center">
+                Your account has no uppaid bils at this time!
+              </p>
+            </div>
+            <a
+              href="#"
+              class="btn btn-success btn-block"
+              *ngIf="!policyData.autoPay"
+              (click)="onPayment()"
+            >
+              Set-up Autopay
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

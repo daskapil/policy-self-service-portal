@@ -1,0 +1,58 @@
+<body class="wrapper">
+  <div *ngIf="isLoading" style="text-align: center">
+    <app-loading-spinner></app-loading-spinner>
+  </div>
+  <div class="col-12 col-sm-4" *ngIf="!isLoading">
+    <div class="card mb-5 rounded">
+      <h4 class="card-header text-center">Please Log In</h4>
+      <div class="card-body">
+        <section class="alert alert-danger" role="alert" *ngIf="errorMsg">
+          <p>{{ errorMsg }}</p>
+        </section>
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+          <div class="form-group">
+            <label for="email">
+              <i class="bi bi-person mr-2"></i>
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              aria-describedby="emailHelp"
+              ngModel
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="inputPassword">
+              <i class="bi bi-key mr-2"></i>
+              Password
+            </label>
+            <input
+              type="password"
+              id="inputPassword"
+              name="password"
+              class="form-control"
+              minlength="6"
+              required
+              ngModel
+            />
+          </div>
+          <div class="text-center">
+            <button
+              type="submit"
+              class="btn btn-block btn-primary"
+              [disabled]="!loginForm.valid"
+            >
+              Log In
+            </button>
+            <p></p>
+            <a class="dropdown-item" href="#">Forgot password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>

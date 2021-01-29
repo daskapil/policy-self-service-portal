@@ -1,0 +1,16 @@
+<nav class="navbar navbar-fixed-top">
+  <a class="navbar-brand text-primary brand-name">New Insurance</a>
+  <div
+    class="nav navbar-nav navbar-right"
+    id="navbarLogout"
+    *ngIf="isAuthenticated"
+  >
+    <button
+      class="btn btn-sm btn-outline-success my-2 my-sm-0"
+      type="submit"
+      (click)="onLogout()"
+    >
+      Logout
+    </button>
+  </div>
+</nav>

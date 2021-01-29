@@ -1,0 +1,12 @@
+.card-header {
+    background-color: rgb(20, 20, 161);
+    font-size: large;
+}
+
+.card-title {
+    background-color: transparent;
+    font-size: large;
+}
+.right-align{
+    float: right;
+}

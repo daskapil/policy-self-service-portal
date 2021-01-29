@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  FIREBASE_API_KEY: `AIzaSyA5oRkP9Iqab8MVuWeM9U3RbBz8VFa3ZiI`,
+  DATABASE_API_URL: 'https://policy-self-service-app-default-rtdb.firebaseio.com'
 };
 
 /*

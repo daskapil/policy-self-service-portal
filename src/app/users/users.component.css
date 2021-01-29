@@ -1,0 +1,13 @@
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.lead{
+    font-size: medium;
+    color: rgb(20, 20, 121);
+}

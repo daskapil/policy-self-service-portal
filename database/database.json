@@ -1,0 +1,101 @@
+{
+    "users": {
+            "z1wadPYugbPoMMdcOFZuHkd11NU2": {
+            "role":"insured",
+            "firstName":"Kapil",
+            "lastName":"Das",
+            "fullName":"Kapil Das",
+            "accountNumber":"10000001",
+            "policyNumber": "01AAA100001"
+            },      
+            "8FhG0rZPiBPg7TXUJxVmT5wnkec2": {
+            "role": "insured",
+            "firstName": "Sachin",
+            "lastName":"Tendulkar",
+            "fullName":"Sachin Tendulkar",
+            "accountNumber":"10000002",
+            "policyNumber": "01AAA100002"
+            },
+            "t19qWpbOmVdit8964T0JCqANpK33": {
+            "role": "insured",
+            "firstName": "Virat",
+            "lastName":"Kohli",
+            "fullName":"Virat Kohli",   
+            "accountNumber":"10000003",
+            "policyNumber": "01AAA100003" 
+            },
+            "VqAot3VjLVPErQo4FCaOdYumrk72": {
+            "role": "agent",
+            "firstName": "Greg",
+            "lastName":"Chappell",
+            "fullName":"Greg Chappell",
+            "accountNumber":"90000001"  
+        }
+    },
+    "policies": {
+        "01AAA100001": {
+            "vehicle": "Tesla S3",
+            "premium": "800",
+            "term": "6",
+            "accountBalance": "800",
+            "lastPayment": "750",
+            "nextPaymentDate": "02/01/2021",
+            "lastPaymentDate": "08/01/2020",
+            "agentCode": "90000001",
+            "autoPay": false    
+        },
+        "01AAA100002": {
+            "vehicle": "BMW i8",
+            "premium": "1500",
+            "term": "6",
+            "accountBalance": "0",
+            "lastPayment": "1450",
+            "nextPaymentDate": "01/01/2021",
+            "lastPaymentDate": "07/01/2020", 
+            "agentCode": "90000001",
+            "autoPay": true
+        },
+        "01AAA100003": {
+            "vehicle": "Bentley Continental GT",
+            "premium": "4000",
+            "term": "12",
+            "accountBalance": "0",
+            "lastPayment": "3800",
+            "nextPaymentDate": "01/01/2021",
+            "lastPaymentDate": "01/01/2020",
+            "agentCode": "90000001",
+            "autoPay": false
+        },
+        "01AAA100004": {
+            "vehicle": "Bentley Continental GT",
+            "premium": "4000",
+            "term": "12",
+            "accountBalance": "0",
+            "lastPayment": "3800",
+            "nextPaymentDate": "01/01/2021",
+            "lastPaymentDate": "01/01/2020",
+            "agentCode": "90000002",
+            "autoPay": false
+        }
+
+    },
+    "paymentHistory": {
+        "01AAA100001": [
+            {
+                "paymentDate": "08/01/2019",
+                "amount": "750",
+                "paymentMethod": "Credit Card"      
+            },
+            {
+                "paymentDate": "02/01/2020",
+                "amount": "750",
+                "paymentMethod": "Credit Card"      
+            },
+            {
+                "paymentDate": "08/01/2020",
+                "amount": "750",
+                "paymentMethod": "Credit Card"      
+            }
+        ]
+    }
+}
