@@ -1,10 +1,22 @@
 table.mat-table {
     display: table;
-    width: 55vw;
+    width: 60vw;
 }
 
 th {
     color: cornsilk;
     font-size: medium;
     background-color: rgb(20, 20, 161);
+}
+
+::ng-deep th.mat-sort-header-sorted {
+    color: cornsilk;
+  }
+  
+::ng-deep .mat-sort-header-arrow  {
+    color: cornsilk !important;
+}
+  
+::ng-deep .mat-sort-header-stem {
+    color: cornsilk !important;
 }

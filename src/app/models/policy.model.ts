@@ -10,6 +10,5 @@ export class Policy {
         public term: string,
         public vehicle: string,
         public policyNumber?: string
-    ) { }
-    
+    ) { }   
 }

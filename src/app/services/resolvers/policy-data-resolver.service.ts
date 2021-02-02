@@ -3,9 +3,8 @@ import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from "@angular/r
 import { Observable } from "rxjs";
 import { exhaustMap, map, take } from "rxjs/operators";
 import { Policy } from "src/app/models/policy.model";
-import { AuthService } from "../auth/auth.service";
 import { PolicyDataService, PolicyDBResponseData } from "../data/policy-data.service";
-import { UserDataService, UserDBResponseData } from "../data/user-data.service";
+import { UserDataService } from "../data/user-data.service";
 
 @Injectable({providedIn:'root'})
 export class PolicyDataResolverService implements Resolve<Policy> {

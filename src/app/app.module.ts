@@ -15,6 +15,11 @@ import { InsuredComponent } from './users/insured/insured.component';
 import { AgentComponent } from './users/agent/agent.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table'
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { PolicyPipePipe } from './pipes/policy-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,8 @@ import { MatTableModule } from '@angular/material/table'
     AgentComponent,
     PaymentInfoComponent,
     LoadingSpinnerComponent,
-    InsuredComponent
+    InsuredComponent,
+    PolicyPipePipe
   ],
   imports: [
     BrowserModule,
@@ -33,7 +39,11 @@ import { MatTableModule } from '@angular/material/table'
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [
     {

@@ -26,12 +26,12 @@ const routes: Routes = [
         component: InsuredComponent,
         resolve: {
           policyResolver: PolicyDataResolverService
-        },
-        children: [
-          { path: 'payment', component: PaymentInfoComponent }
-        ]
+        }
+        // children: [
+        //   { path: 'payment', component: PaymentInfoComponent }
+        // ]
       },
-      
+      { path: 'insured/payment', component: PaymentInfoComponent },
       { path: 'agent', component: AgentComponent }
     ]
   } 

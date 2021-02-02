@@ -34,6 +34,7 @@
     },
     "policies": {
         "01AAA100001": {
+            "fullName":"Kapil Das",
             "vehicle": "Tesla S3",
             "premium": "800",
             "term": "6",
@@ -45,6 +46,7 @@
             "autoPay": false    
         },
         "01AAA100002": {
+            "fullName":"Sachin Tendulkar",
             "vehicle": "BMW i8",
             "premium": "1500",
             "term": "6",
@@ -56,6 +58,7 @@
             "autoPay": true
         },
         "01AAA100003": {
+            "fullName":"Virat Kohli",
             "vehicle": "Bentley Continental GT",
             "premium": "4000",
             "term": "12",
@@ -67,6 +70,7 @@
             "autoPay": false
         },
         "01AAA100004": {
+            "fullName":"Rohit Sharma", 
             "vehicle": "Bentley Continental GT",
             "premium": "4000",
             "term": "12",
@@ -74,10 +78,141 @@
             "lastPayment": "3800",
             "nextPaymentDate": "01/01/2021",
             "lastPaymentDate": "01/01/2020",
-            "agentCode": "90000002",
+            "agentCode": "90000001",
+            "autoPay": false
+        },
+        "01AAA100005": {
+            "fullName":"Mahendra Singh Dhoni", 
+            "vehicle": "Hummer EV",
+            "premium": "4000",
+            "term": "12",
+            "accountBalance": "0",
+            "lastPayment": "3800",
+            "nextPaymentDate": "01/01/2021",
+            "lastPaymentDate": "01/01/2020",
+            "agentCode": "90000001",
+            "autoPay": false
+        },
+        "01AAA100006": {
+            "fullName":"KL Rahul", 
+            "vehicle": "Bentley Continental GT",
+            "premium": "4000",
+            "term": "12",
+            "accountBalance": "0",
+            "lastPayment": "3800",
+            "nextPaymentDate": "01/01/2021",
+            "lastPaymentDate": "01/01/2020",
+            "agentCode": "90000001",
+            "autoPay": false
+        },
+        "01AAA100007": {
+            "fullName":"KL Rahul", 
+            "vehicle": "Bentley Continental GT",
+            "premium": "4000",
+            "term": "12",
+            "accountBalance": "0",
+            "lastPayment": "3800",
+            "nextPaymentDate": "01/01/2021",
+            "lastPaymentDate": "01/01/2020",
+            "agentCode": "90000001",
+            "autoPay": false
+        },
+        "01AAA100008": {
+            "fullName":"Ravindra Jadeja", 
+            "vehicle": "Bentley Continental GT",
+            "premium": "4000",
+            "term": "12",
+            "accountBalance": "0",
+            "lastPayment": "3800",
+            "nextPaymentDate": "01/01/2021",
+            "lastPaymentDate": "01/01/2020",
+            "agentCode": "90000001",
+            "autoPay": false
+        },
+        "01AAA100009": {
+            "fullName":"Shikhar Dhawan", 
+            "vehicle": "Bentley Continental GT",
+            "premium": "4000",
+            "term": "12",
+            "accountBalance": "0",
+            "lastPayment": "3800",
+            "nextPaymentDate": "01/01/2021",
+            "lastPaymentDate": "01/01/2020",
+            "agentCode": "90000001",
+            "autoPay": false
+        },
+        "01AAA100010": {
+            "fullName":"Mohammad Shami", 
+            "vehicle": "Bentley Continental GT",
+            "premium": "4000",
+            "term": "12",
+            "accountBalance": "0",
+            "lastPayment": "3800",
+            "nextPaymentDate": "01/01/2021",
+            "lastPaymentDate": "01/01/2020",
+            "agentCode": "90000001",
+            "autoPay": false
+        },
+        "01AAA100011": {
+            "fullName":"Jasprit Bumrah", 
+            "vehicle": "Bentley Continental GT",
+            "premium": "4000",
+            "term": "12",
+            "accountBalance": "0",
+            "lastPayment": "3800",
+            "nextPaymentDate": "01/01/2021",
+            "lastPaymentDate": "01/01/2020",
+            "agentCode": "90000001",
+            "autoPay": false
+        },
+        "01AAA100012": {
+            "fullName":"Hardik Pandya", 
+            "vehicle": "Bentley Continental GT",
+            "premium": "4000",
+            "term": "12",
+            "accountBalance": "0",
+            "lastPayment": "3800",
+            "nextPaymentDate": "01/01/2021",
+            "lastPaymentDate": "01/01/2020",
+            "agentCode": "90000001",
+            "autoPay": false
+        },
+        "01AAA100013": {
+            "fullName":"Cheteshwar Pujara", 
+            "vehicle": "Bentley Continental GT",
+            "premium": "4000",
+            "term": "12",
+            "accountBalance": "0",
+            "lastPayment": "3800",
+            "nextPaymentDate": "01/01/2021",
+            "lastPaymentDate": "01/01/2020",
+            "agentCode": "90000001",
+            "autoPay": false
+        },
+        "01AAA100014": {
+            "fullName":"Ajinkya Rahane", 
+            "vehicle": "Bentley Continental GT",
+            "premium": "4000",
+            "term": "12",
+            "accountBalance": "0",
+            "lastPayment": "3800",
+            "nextPaymentDate": "01/01/2021",
+            "lastPaymentDate": "01/01/2020",
+            "agentCode": "90000001",
+            "autoPay": false
+        },
+        "01AAA100015": {
+            "fullName":"Rishabh Pant", 
+            "vehicle": "Bentley Continental GT",
+            "premium": "4000",
+            "term": "12",
+            "accountBalance": "0",
+            "lastPayment": "3800",
+            "nextPaymentDate": "01/01/2021",
+            "lastPaymentDate": "01/01/2020",
+            "agentCode": "90000001",
             "autoPay": false
         }
-
     },
     "paymentHistory": {
         "01AAA100001": [

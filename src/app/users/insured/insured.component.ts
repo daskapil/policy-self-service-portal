@@ -57,7 +57,7 @@ export class InsuredComponent implements OnInit, OnDestroy {
   }
 
   onPayment() {
-    this.router.navigate(['./payment'], { relativeTo: this.route });
+    this.router.navigate(['/user/insured/payment']);
   }
 
   ngOnDestroy(): void {

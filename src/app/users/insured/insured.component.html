@@ -1,7 +1,7 @@
 <div class="card mb-0 shadow mt-3">
   <h5 class="card-header bg-gradient text-white">
     <span>Deshboard</span>
-    <span class="right-align">Policy# {{ policyNumber }}</span>
+    <span class="right-align">Policy# {{ policyNumber | policyPipe }}</span>
   </h5>
   <div class="card-body mb-0">
     <div class="row ml-1">
@@ -92,7 +92,7 @@
             style="max-width: 18rem"
           >
             <div [hidden]="!+policyData.accountBalance">
-              <a class="btn btn-success btn-block" [routerLink]="['payment']">
+              <a class="btn btn-success btn-block" (click)="onPayment()">
                 Pay Now
               </a>
               <div class="card-body">
