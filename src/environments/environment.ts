@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  FIREBASE_API_KEY: `AIzaSyA5oRkP9Iqab8MVuWeM9U3RbBz8VFa3ZiI`,
-  DATABASE_API_URL: 'https://policy-self-service-app-default-rtdb.firebaseio.com'
+  FIREBASE_API_KEY: `api_key`,
+  DATABASE_API_URL: 'api_url'
 };
 
 /*
