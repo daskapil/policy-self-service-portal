@@ -1,7 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { BehaviorSubject, Subject } from "rxjs";
-import { tap } from "rxjs/operators";
+import { catchError, tap } from "rxjs/operators";
 import { UserData } from "src/app/models/user-data.model";
 import { User } from "src/app/models/user.model";
 import { environment } from "src/environments/environment";
@@ -32,10 +32,16 @@ export class UserDataService {
         this.authdata = this.authService.user.getValue();
         console.log(this.authdata);
         console.log(`${this.dbApiUrl}/users/${this.authdata.id}.json`);
+
+        // if (this.userDataSubject) {
+        //     return userDataSubject;
+        // }
+
         return this.http
             .get<UserDBResponseData>(`${this.dbApiUrl}/users/${this.authdata.id}.json`)
             .pipe(
                 tap(resData => this.handleUserDetails(resData))
+                // catchError(async (error) => console.log(error))
             );
     }
 

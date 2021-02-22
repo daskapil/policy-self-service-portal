@@ -27,14 +27,12 @@ const routes: Routes = [
         resolve: {
           policyResolver: PolicyDataResolverService
         }
-        // children: [
-        //   { path: 'payment', component: PaymentInfoComponent }
-        // ]
       },
       { path: 'insured/payment', component: PaymentInfoComponent },
       { path: 'agent', component: AgentComponent }
     ]
-  } 
+  },
+  { path: '**', redirectTo: 'login', pathMatch: 'full' }
 ];
 
 @NgModule({

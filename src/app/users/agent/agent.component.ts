@@ -3,7 +3,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute } from '@angular/router';
-import { filter, map } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 import { Policy } from 'src/app/models/policy.model';
 import { PolicyDataService } from 'src/app/services/data/policy-data.service';
 
@@ -53,7 +53,7 @@ export class AgentComponent implements OnInit {
     );
     
     this.policyDataService
-      .getPolicies(this.agentCode)
+      .getPolicies()
       .pipe(
         map(policies => {
           const policyArr: Policy[] = [];

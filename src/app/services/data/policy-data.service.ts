@@ -33,7 +33,7 @@ export class PolicyDataService {
             .get<PolicyDBResponseData>(`${this.dbApiUrl}/policies/${policyNumber}.json`);    
     }
 
-    getPolicies(agentCode: string) {
+    getPolicies() {
         return this.http
             .get<PolicyDBResponseData[]>(`${this.dbApiUrl}/policies.json`);
             // .pipe(

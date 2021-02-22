@@ -46,8 +46,7 @@ testem.log
 Thumbs.db
 
 # Angular Environment Variables
-/src/environment/environment.prod.ts
-/src/environment/environment.ts
+/src/environment/*.ts
 
 # dotenv environment variables file
 .env
