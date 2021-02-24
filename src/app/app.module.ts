@@ -8,9 +8,10 @@ import { TopNavComponent } from './top-nav/top-nav.component';
 import { AuthInterceptorService } from './services/auth/auth-interceptor.service';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
-  declarations: [AppComponent, TopNavComponent],
+  declarations: [AppComponent, TopNavComponent, ErrorPageComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
