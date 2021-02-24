@@ -8,7 +8,7 @@
     background-size: cover;
 }
 
-i {
+i, mat-icon {
     font-size: 1.5rem; 
     color: rgb(60, 118, 226);
 }

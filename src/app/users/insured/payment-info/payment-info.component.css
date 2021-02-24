@@ -25,10 +25,20 @@ body {
     width: 100%;
   }
   
-  .full-width {
+.full-width {
     width: 100%;
   }
 
+small {
+ color: #00e676;
+}
+
+small mat-icon {
+  font-size: 14px;
+}
+.mat-radio-button {
+    margin: 0 12px;
+  }
 
 
 .form-control {
